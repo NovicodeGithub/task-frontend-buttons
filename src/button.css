@@ -1,0 +1,40 @@
+button {
+	/* custom properties */
+	--button-background-color: #0085b8;
+	--button-text-color: #fff;
+	--button-border: none;
+
+	/* сброс стилей */
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: default;
+	display: inline-block;
+   	text-align: center;
+	text-decoration: none;
+
+	padding: 0.3em 1.5em;
+	color: var(--button-text-color);
+	position: relative;
+	background: var(--button-background-color);
+	margin: 0 10px;
+}
+
+button::before {
+	border: var(--button-border);
+	content: '';
+	position: absolute;
+	top: -1px;
+	right: -0.3em;
+	bottom: -1px;
+	left: -0.3em;
+	z-index: -1;
+	background: var(--button-background-color);
+	transform: skew(-10deg);
+}
+
+.button {
+	cursor: pointer;
+}
