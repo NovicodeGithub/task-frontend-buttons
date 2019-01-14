@@ -17,7 +17,7 @@
 	font-style: normal;
 	font-stretch: condensed;
 	font-family: 'Futura Std';
-	src:
+	src:	
 		local('FuturaStd-Condensed'),
 		local('Futura Std Condensed'),
 		url('fonts/futurastd-condensed.woff') format('woff'),
